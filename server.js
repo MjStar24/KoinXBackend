@@ -19,10 +19,10 @@ app.use(express.json());
 app.use("/api",cryptoRoutes);
 
 
-cron.schedule("0 */2 * * *", async () => {
-    console.log("Running scheduled job...");
-    await fetchCryptoData();
-});
+// cron.schedule("0 */2 * * *", async () => {
+//     console.log("Running scheduled job...");
+//     await fetchCryptoData();
+// });
 
 const PORT=process.env.PORT || 4000;
 app.listen(PORT,()=>{
