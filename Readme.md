@@ -6,6 +6,14 @@ An Express.js server offering features like statistics and deviation, containeri
 
 
 
+## Deployment
+
+Server deployed at 
+
+```bash
+  https://koinxbackend-zebr.onrender.com
+```
+
 ## Run using docker
 
 Clone the project
@@ -56,4 +64,45 @@ Start the server
 ```bash
   npm run start
 ```
+
+
+## API Reference
+
+
+
+Base URL 
+
+If running locally 
+
+```http
+  http://localhost:<PORT>
+
+```
+For deployed Server
+
+```http
+  https://koinxbackend-zebr.onrender.com
+
+```
+
+#### Get stats
+
+```http
+  GET /api/stats?coin=${name}
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `name` | `string`   | **Required**. name of coin passed as query Parameter |
+
+#### Get item
+
+```http
+  GET /api/deviation?coin=${name}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `name`      | `string` | **Required**. name of coin passed as query Parameter |
+
 
