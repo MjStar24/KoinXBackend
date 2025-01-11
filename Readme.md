@@ -95,7 +95,7 @@ For deployed Server
 | :-------- | :------- | :------------------------- |
 | `name` | `string`   | **Required**. name of coin passed as query Parameter |
 
-#### Get item
+#### Get deviation
 
 ```http
   GET /api/deviation?coin=${name}
